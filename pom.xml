@@ -22,13 +22,15 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
       <distribution>repo</distribution>
     </license>
-  </licenses>  
+  </licenses>
+  <!--
   <scm>
     <connection>scm:svn:http://svn.terracotta.org/svn/quartz</connection>
     <developerConnection>scm:svn:https://svn.terracotta.org/repo/quartz</developerConnection>
     <tag/>
     <url>http://svn.terracotta.org/svn/quartz</url>
   </scm>
+  -->
   <issueManagement>
     <system>Terracotta's JIRA</system>
     <url>http://jira.terracotta.org/jira/browse/QTZ</url>
@@ -69,15 +71,17 @@
     <slf4j.version>1.6.6</slf4j.version>
     <c3p0.version>0.9.1.1</c3p0.version>
     <log4j.version>1.2.16</log4j.version>
-    <maven-forge-plugin.version>1.0.7</maven-forge-plugin.version>
+    <!--<maven-forge-plugin.version>1.0.7</maven-forge-plugin.version>-->
     <gmaven-plugin.version>1.4</gmaven-plugin.version>
     <checkstyle-suppressions-file>suppressions.xml</checkstyle-suppressions-file>
     <checkstyle-config-file>checkstyle.xml</checkstyle-config-file>
     <checkstyle-header-file>header.txt</checkstyle-header-file>
 
+    <!--
     <terracotta-snapshots-url>http://nexus.terracotta.lan:8080/content/repositories/terracotta-snapshots</terracotta-snapshots-url>
     <terracotta-staging-url>http://nexus.terracotta.lan:8080/content/repositories/terracotta-staging</terracotta-staging-url>
-    <terracotta-releases-url>http://nexus.terracotta.lan:8080/content/repositories/terracotta-releases</terracotta-releases-url>    
+    <terracotta-releases-url>http://nexus.terracotta.lan:8080/content/repositories/terracotta-releases</terracotta-releases-url>
+     -->
   </properties>
 
   <build>
@@ -105,6 +109,7 @@
                     <ignore/>
                   </action>
                 </pluginExecution>
+                <!--
                 <pluginExecution>
                   <pluginExecutionFilter>
                     <groupId>org.terracotta</groupId>
@@ -117,7 +122,8 @@
                   <action>
                     <ignore/>
                   </action>
-                </pluginExecution>                
+                </pluginExecution>
+                -->
                 <pluginExecution>
                   <pluginExecutionFilter>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -318,6 +324,7 @@
       </build>
     </profile>
 
+    <!--
     <profile>
       <id>deploy-sonatype</id>
       <distributionManagement>
@@ -343,6 +350,7 @@
         </repository>
       </distributionManagement>
     </profile>
+    -->
     <profile>
       <id>system-tests</id>
       <modules>
@@ -351,6 +359,7 @@
     </profile>    
   </profiles>  
 
+  <!--
   <distributionManagement>
     <repository>
       <id>terracotta-staging</id>
@@ -369,11 +378,11 @@
     <repository>
       <id>terracotta-snapshots</id>
       <url>http://www.terracotta.org/download/reflector/snapshots</url>
-    </repository>  
+    </repository>
     <repository>
       <id>terracotta-releases</id>
-      <url>http://www.terracotta.org/download/reflector/releases</url>   
-    </repository>   
+      <url>http://www.terracotta.org/download/reflector/releases</url>
+    </repository>
   </repositories>
 
   <pluginRepositories>
@@ -384,6 +393,7 @@
     <pluginRepository>
       <id>terracotta-releases</id>
       <url>http://www.terracotta.org/download/reflector/releases</url>
-    </pluginRepository>    
+    </pluginRepository>
   </pluginRepositories>
+  -->
 </project>

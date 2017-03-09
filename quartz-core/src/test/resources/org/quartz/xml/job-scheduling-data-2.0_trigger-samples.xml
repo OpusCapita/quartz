@@ -203,13 +203,13 @@
 				<cron-expression>0 0 0 ? * TUE#4</cron-expression>
 			</cron>
 		</trigger>	
-		<trigger>
+		<!--trigger>
 			<cron>
 				<name>every_4th_TUE_of_month_at_12AM_in_2014</name>
 				<job-name>job1</job-name>
 				<cron-expression>0 0 0 ? * WED#4 2014</cron-expression>
 			</cron>
-		</trigger>
+		</trigger-->
 		
 		<!-- Specific values -->	
 		<trigger>
@@ -233,13 +233,13 @@
 				<cron-expression>0 0 0 1,15 JAN,JUN,DEC ?</cron-expression>
 			</cron>
 		</trigger>
-		<trigger>
+		<!--trigger>
 			<cron>
 				<name>1st_and_15th_of_JAN_JUN_DEC_at_12AM_year_13_n_14</name>
 				<job-name>job1</job-name>
 				<cron-expression>0 0 0 1,15 JAN,JUN,DEC ? 2013,2014</cron-expression>
 			</cron>
-		</trigger>
+		</trigger-->
 		
 		<!--  Increments -->
 		<trigger>

@@ -33,12 +33,12 @@ public class VersionTest extends TestCase {
 
         String iter = QuartzScheduler.getVersionIteration();
         assertNotNull(iter);
-        Pattern suffix = Pattern.compile("(\\d+)(-\\w+)?");
+        Pattern suffix = Pattern.compile("(\\d+)(-\\w+)(-\\w+)?");
         Matcher m = suffix.matcher(iter);
         if (m.matches()) {
           assertNonNegativeInteger(m.group(1));
         } else {
-          throw new RuntimeException(iter + " doesn't match pattern '(\\d+)(-\\w+)?'");
+          throw new RuntimeException(iter + " doesn't match pattern '(\\d+)(-\\w+)(-\\w+)?'");
         } 
 
     }

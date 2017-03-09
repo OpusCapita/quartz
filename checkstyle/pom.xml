@@ -16,6 +16,7 @@
   </properties>
   -->
 
+  <!--
   <profiles>
     <profile>
       <id>deploy-sonatype</id>
@@ -31,7 +32,7 @@
       </distributionManagement>
     </profile>    
   </profiles>
-  
+
   <distributionManagement>
     <repository>
       <id>terracotta-staging</id>
@@ -44,6 +45,7 @@
       <name>Terracotta Snapshots Repository</name>
       <url>${terracotta-snapshots-url}</url>
     </snapshotRepository>
-  </distributionManagement>  
+  </distributionManagement>
+  -->
 
 </project>

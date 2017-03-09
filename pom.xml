@@ -2,6 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <artifactId>jcatalog-parent</artifactId>
+    <groupId>com.jcatalog</groupId>
+    <version>7.16.GA</version>
+  </parent>
+
   <groupId>org.quartz-scheduler</groupId>
   <artifactId>quartz-parent</artifactId>
   <version>2.2.1-opuscapita-SNAPSHOT</version>
@@ -83,6 +89,14 @@
     <terracotta-releases-url>http://nexus.terracotta.lan:8080/content/repositories/terracotta-releases</terracotta-releases-url>
      -->
   </properties>
+
+  <distributionManagement>
+    <site>
+      <id>local</id>
+      <name>Local Site Directory</name>
+      <url>${projectDistributionMangementSiteBaseUrl}/${project.groupId}/${project.artifactId}/${project.version}</url>
+    </site>
+  </distributionManagement>
 
   <build>
     <pluginManagement>                                                           
